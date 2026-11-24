@@ -1,77 +1,105 @@
-# AI Financial Coach Agent with Google ADK 💰
 
-### 🎓 FREE Step-by-Step Tutorial 
-**👉 [Click here to follow our complete step-by-step tutorial](https://www.theunwindai.com/p/build-a-multi-agent-personal-finance-coach) and learn how to build this from scratch with detailed code walkthroughs, explanations, and best practices.**
+# AI Financial Coach 💰
 
-The **AI Financial Coach** is a personalized financial advisor powered by Google's ADK (Agent Development Kit) framework. This app provides comprehensive financial analysis and recommendations based on user inputs including income, expenses, debts, and financial goals.
+An AI-powered personal finance assistant that analyzes income, expenses, savings goals, and debts to provide personalized financial insights and recommendations.
 
 ## Features
 
-- **Multi-Agent Financial Analysis System**
-    - Budget Analysis Agent: Analyzes spending patterns and recommends optimizations
-    - Savings Strategy Agent: Creates personalized savings plans and emergency fund strategies
-    - Debt Reduction Agent: Develops optimized debt payoff strategies using avalanche and snowball methods
+### 🤖 Multi-Agent Financial Analysis
 
-- **Expense Analysis**:
-  - Supports both CSV upload and manual expense entry
-  - CSV transaction analysis with date, category, and amount tracking
-  - Visual breakdown of spending by category
-  - Automated expense categorization and pattern detection
+- **Budget Analysis Agent:** Analyzes spending patterns and recommends budget optimizations.
+- **Savings Strategy Agent:** Creates personalized savings plans and emergency fund strategies.
+- **Debt Reduction Agent:** Suggests optimized debt repayment strategies using Avalanche and Snowball methods.
 
-- **Savings Recommendations**:
-  - Emergency fund sizing and building strategies
-  - Custom savings allocations across different goals
-  - Practical automation techniques for consistent saving
-  - Progress tracking and milestone recommendations
+### 📊 Expense Analysis
 
-- **Debt Management**:
-  - Multiple debt handling with interest rate optimization
-  - Comparison between avalanche and snowball methods
-  - Visual debt payoff timeline and interest savings analysis
-  - Actionable debt reduction recommendations
+- Upload expenses through CSV files.
+- Track transactions by date, category, and amount.
+- Visualize spending patterns through interactive charts.
+- Analyze expenses and identify spending trends.
 
-- **Interactive Visualizations**:
-  - Pie charts for expense breakdown
-  - Bar charts for income vs. expenses
-  - Debt comparison graphs
-  - Progress tracking metrics
+### 💰 Savings Recommendations
 
+- Emergency fund planning.
+- Personalized savings strategies.
+- Goal-based savings recommendations.
+- Practical suggestions for consistent saving.
 
-## How to Run
+### 💳 Debt Management
 
-Follow the steps below to set up and run the application:
+- Analyze multiple debts and interest rates.
+- Compare Avalanche and Snowball repayment methods.
+- Generate debt repayment strategies.
+- Visualize debt reduction progress.
 
-1. **Get API Key**:
-   - Get a free Gemini API Key from Google AI Studio: https://aistudio.google.com/apikey
-   - Create a `.env` file in the project root and add your API key:
-     ```
-     GOOGLE_API_KEY=your_api_key_here
-     ```
+### 📈 Interactive Visualizations
 
-2. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_financial_coach_agent/
-   ```
+- Expense breakdown charts.
+- Income vs. expenses analysis.
+- Debt comparison graphs.
+- Financial insights and metrics.
 
-3. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Tech Stack
 
-4. **Run the Streamlit App**:
-   ```bash
-   streamlit run ai_financial_coach_agent.py
-   ```
+- Python
+- Google ADK
+- Google Gemini API
+- Streamlit
+- Pandas
+- Plotly
+
+## Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sakshikesarwani/AI-Financial-Coach.git
+cd AI-Financial-Coach
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+py -3.12 -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure API Key
+
+Get your Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey).
+
+Create a `.env` file in the project root:
+
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+
+### 5. Run the Application
+
+```bash
+streamlit run ai_financial_coach_agent.py
+```
+
+Open `http://localhost:8501` in your browser.
 
 ## CSV File Format
 
-The application accepts CSV files with the following required columns:
-- `Date`: Transaction date in YYYY-MM-DD format
-- `Category`: Expense category
-- `Amount`: Transaction amount (supports currency symbols and comma formatting)
+The application accepts CSV files containing these columns:
+
+| Column | Description |
+|---|---|
+| Date | Transaction date (YYYY-MM-DD) |
+| Category | Expense category |
+| Amount | Transaction amount |
 
 Example:
+
 ```csv
 Date,Category,Amount
 2024-01-01,Housing,1200.00
@@ -79,4 +107,9 @@ Date,Category,Amount
 2024-01-03,Transportation,45.00
 ```
 
-A template CSV file can be downloaded directly from the application's sidebar.
+A sample CSV template is available in the application sidebar.
+
+## Disclaimer
+
+This application provides informational financial insights and recommendations. It is not a substitute for professional financial advice.
+
