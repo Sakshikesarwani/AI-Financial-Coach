@@ -1,7 +1,12 @@
+💰 AI Financial Coach
 
-# AI Financial Coach 💰
+An AI-powered personal finance assistant that analyzes income, expenses, savings goals, and debts to provide personalized financial insights and actionable recommendations.
 
-An AI-powered personal finance assistant that analyzes income, expenses, savings goals, and debts to provide personalized financial insights and recommendations.
+<p align="center">
+  <a href="https://ai-financial-coach-cgnu2tvbd9zbjoswep7enn.streamlit.app/">
+    <strong>🚀 Live Demo</strong>
+  </a>
+</p>
 
 ## Features
 
